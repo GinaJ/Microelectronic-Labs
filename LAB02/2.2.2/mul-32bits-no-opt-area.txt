@@ -1,0 +1,24 @@
+ 
+****************************************
+Report : area
+Design : booth_mul_Nbit32
+Version: Z-2007.03-SP1
+Date   : Wed Apr 13 09:21:57 2016
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:              128
+Number of nets:              4141
+Number of cells:              106
+Number of references:          66
+
+Combinational area:       30740.023679
+Noncombinational area:       0.000000
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          30740.023438
+Total area:                 undefined
+1

@@ -1,0 +1,85 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : P4adder
+Version: Z-2007.03-SP1
+Date   : Mon Mar 21 20:36:35 2016
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: B[0] (input port)
+  Endpoint: S[25] (output port)
+  Path Group: default
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 r
+  B[0] (in)                                               0.00       0.00 r
+  Usparce_tree/B[1] (sparce_tree_POWER5)                  0.00       0.00 r
+  Usparce_tree/U69/ZN (INV_X1)                            0.02       0.02 f
+  Usparce_tree/U67/ZN (NAND2_X1)                          0.02       0.05 r
+  Usparce_tree/U68/ZN (NAND2_X1)                          0.03       0.07 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.07 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.11 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.13 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.13 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.13 f
+  Usparce_tree/blkg_1_1/U1/ZN (AOI21_X1)                  0.04       0.17 r
+  Usparce_tree/blkg_1_1/U2/ZN (INV_X1)                    0.02       0.20 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.20 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.20 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.24 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.03       0.26 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.26 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.26 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.04       0.30 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.03       0.33 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.33 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.33 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (NAND2_X1)                0.03       0.36 r
+  Usparce_tree/blkg_4_1_0/U3/ZN (NAND2_X1)                0.04       0.39 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.39 f
+  Usparce_tree/blkg_5_1_2/Gk1j (block_g_2)                0.00       0.39 f
+  Usparce_tree/blkg_5_1_2/U2/ZN (NAND2_X1)                0.04       0.43 r
+  Usparce_tree/blkg_5_1_2/U3/ZN (NAND2_X1)                0.03       0.46 f
+  Usparce_tree/blkg_5_1_2/Gij (block_g_2)                 0.00       0.46 f
+  Usparce_tree/Cout[6] (sparce_tree_POWER5)               0.00       0.46 f
+  USum_generator/Ci[6] (Sum_generator_Nbit32_Nblock8)     0.00       0.46 f
+  USum_generator/cs_gen_7/Ci (cs_generic_N4_2)            0.00       0.46 f
+  USum_generator/cs_gen_7/U1/SEL (MUX21_GENERIC_N4_2)     0.00       0.46 f
+  USum_generator/cs_gen_7/U1/U1/Z (BUF_X2)                0.05       0.50 f
+  USum_generator/cs_gen_7/U1/UND1_1/B (ND2_18)            0.00       0.50 f
+  USum_generator/cs_gen_7/U1/UND1_1/U1/ZN (NAND2_X1)      0.03       0.53 r
+  USum_generator/cs_gen_7/U1/UND1_1/Y (ND2_18)            0.00       0.53 r
+  USum_generator/cs_gen_7/U1/UND3_1/A (ND2_16)            0.00       0.53 r
+  USum_generator/cs_gen_7/U1/UND3_1/U1/ZN (NAND2_X1)      0.02       0.56 f
+  USum_generator/cs_gen_7/U1/UND3_1/Y (ND2_16)            0.00       0.56 f
+  USum_generator/cs_gen_7/U1/Y[1] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.56 f
+  USum_generator/cs_gen_7/S[1] (cs_generic_N4_2)          0.00       0.56 f
+  USum_generator/S[25] (Sum_generator_Nbit32_Nblock8)     0.00       0.56 f
+  S[25] (out)                                             0.00       0.56 f
+  data arrival time                                                  0.56
+
+  max_delay                                               0.56       0.56
+  output external delay                                   0.00       0.56
+  data required time                                                 0.56
+  --------------------------------------------------------------------------
+  data required time                                                 0.56
+  data arrival time                                                 -0.56
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

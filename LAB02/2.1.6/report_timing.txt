@@ -1,0 +1,636 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -nworst 10
+        -max_paths 10
+        -sort_by group
+Design : P4adder
+Version: Z-2007.03-SP1
+Date   : Mon Mar 21 19:40:34 2016
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[22] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_3/Gk1j (block_g_1)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_3/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_3/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_3/Gij (block_g_1)                 0.00       0.59 f
+  Usparce_tree/Cout[5] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[5] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_6/Ci (cs_generic_N4_3)            0.00       0.59 f
+  USum_generator/cs_gen_6/U1/SEL (MUX21_GENERIC_N4_3)     0.00       0.59 f
+  USum_generator/cs_gen_6/U1/UIV/A (IV_3)                 0.00       0.59 f
+  USum_generator/cs_gen_6/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_6/U1/UIV/Y (IV_3)                 0.00       0.64 r
+  USum_generator/cs_gen_6/U1/UND2_2/B (ND2_32)            0.00       0.64 r
+  USum_generator/cs_gen_6/U1/UND2_2/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_6/U1/UND2_2/Y (ND2_32)            0.00       0.67 f
+  USum_generator/cs_gen_6/U1/UND3_2/B (ND2_31)            0.00       0.67 f
+  USum_generator/cs_gen_6/U1/UND3_2/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_6/U1/UND3_2/Y (ND2_31)            0.00       0.69 r
+  USum_generator/cs_gen_6/U1/Y[2] (MUX21_GENERIC_N4_3)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_6/S[2] (cs_generic_N4_3)          0.00       0.69 r
+  USum_generator/S[22] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[22] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[23] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_3/Gk1j (block_g_1)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_3/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_3/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_3/Gij (block_g_1)                 0.00       0.59 f
+  Usparce_tree/Cout[5] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[5] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_6/Ci (cs_generic_N4_3)            0.00       0.59 f
+  USum_generator/cs_gen_6/U1/SEL (MUX21_GENERIC_N4_3)     0.00       0.59 f
+  USum_generator/cs_gen_6/U1/UIV/A (IV_3)                 0.00       0.59 f
+  USum_generator/cs_gen_6/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_6/U1/UIV/Y (IV_3)                 0.00       0.64 r
+  USum_generator/cs_gen_6/U1/UND2_3/B (ND2_35)            0.00       0.64 r
+  USum_generator/cs_gen_6/U1/UND2_3/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_6/U1/UND2_3/Y (ND2_35)            0.00       0.67 f
+  USum_generator/cs_gen_6/U1/UND3_3/B (ND2_34)            0.00       0.67 f
+  USum_generator/cs_gen_6/U1/UND3_3/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_6/U1/UND3_3/Y (ND2_34)            0.00       0.69 r
+  USum_generator/cs_gen_6/U1/Y[3] (MUX21_GENERIC_N4_3)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_6/S[3] (cs_generic_N4_3)          0.00       0.69 r
+  USum_generator/S[23] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[23] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[24] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/Gk1j (block_g_2)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_2/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_2/Gij (block_g_2)                 0.00       0.59 f
+  Usparce_tree/Cout[6] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[6] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_7/Ci (cs_generic_N4_2)            0.00       0.59 f
+  USum_generator/cs_gen_7/U1/SEL (MUX21_GENERIC_N4_2)     0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/A (IV_2)                 0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_7/U1/UIV/Y (IV_2)                 0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_0/B (ND2_14)            0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_0/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_7/U1/UND2_0/Y (ND2_14)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_0/B (ND2_13)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_0/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_7/U1/UND3_0/Y (ND2_13)            0.00       0.69 r
+  USum_generator/cs_gen_7/U1/Y[0] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_7/S[0] (cs_generic_N4_2)          0.00       0.69 r
+  USum_generator/S[24] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[24] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[25] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/Gk1j (block_g_2)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_2/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_2/Gij (block_g_2)                 0.00       0.59 f
+  Usparce_tree/Cout[6] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[6] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_7/Ci (cs_generic_N4_2)            0.00       0.59 f
+  USum_generator/cs_gen_7/U1/SEL (MUX21_GENERIC_N4_2)     0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/A (IV_2)                 0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_7/U1/UIV/Y (IV_2)                 0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_1/B (ND2_17)            0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_1/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_7/U1/UND2_1/Y (ND2_17)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_1/B (ND2_16)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_1/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_7/U1/UND3_1/Y (ND2_16)            0.00       0.69 r
+  USum_generator/cs_gen_7/U1/Y[1] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_7/S[1] (cs_generic_N4_2)          0.00       0.69 r
+  USum_generator/S[25] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[25] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[26] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/Gk1j (block_g_2)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_2/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_2/Gij (block_g_2)                 0.00       0.59 f
+  Usparce_tree/Cout[6] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[6] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_7/Ci (cs_generic_N4_2)            0.00       0.59 f
+  USum_generator/cs_gen_7/U1/SEL (MUX21_GENERIC_N4_2)     0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/A (IV_2)                 0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_7/U1/UIV/Y (IV_2)                 0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_2/B (ND2_20)            0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_2/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_7/U1/UND2_2/Y (ND2_20)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_2/B (ND2_19)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_2/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_7/U1/UND3_2/Y (ND2_19)            0.00       0.69 r
+  USum_generator/cs_gen_7/U1/Y[2] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_7/S[2] (cs_generic_N4_2)          0.00       0.69 r
+  USum_generator/S[26] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[26] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[27] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/Gk1j (block_g_2)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_2/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_2/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_2/Gij (block_g_2)                 0.00       0.59 f
+  Usparce_tree/Cout[6] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[6] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_7/Ci (cs_generic_N4_2)            0.00       0.59 f
+  USum_generator/cs_gen_7/U1/SEL (MUX21_GENERIC_N4_2)     0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/A (IV_2)                 0.00       0.59 f
+  USum_generator/cs_gen_7/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_7/U1/UIV/Y (IV_2)                 0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_3/B (ND2_23)            0.00       0.64 r
+  USum_generator/cs_gen_7/U1/UND2_3/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_7/U1/UND2_3/Y (ND2_23)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_3/B (ND2_22)            0.00       0.67 f
+  USum_generator/cs_gen_7/U1/UND3_3/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_7/U1/UND3_3/Y (ND2_22)            0.00       0.69 r
+  USum_generator/cs_gen_7/U1/Y[3] (MUX21_GENERIC_N4_2)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_7/S[3] (cs_generic_N4_2)          0.00       0.69 r
+  USum_generator/S[27] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[27] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[28] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/Gk1j (block_g_3)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_1/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_1/Gij (block_g_3)                 0.00       0.59 f
+  Usparce_tree/Cout[7] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[7] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_8/Ci (cs_generic_N4_1)            0.00       0.59 f
+  USum_generator/cs_gen_8/U1/SEL (MUX21_GENERIC_N4_1)     0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/A (IV_1)                 0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_8/U1/UIV/Y (IV_1)                 0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_0/B (ND2_2)             0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_0/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_8/U1/UND2_0/Y (ND2_2)             0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_0/B (ND2_1)             0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_0/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_8/U1/UND3_0/Y (ND2_1)             0.00       0.69 r
+  USum_generator/cs_gen_8/U1/Y[0] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_8/S[0] (cs_generic_N4_1)          0.00       0.69 r
+  USum_generator/S[28] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[28] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[29] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/Gk1j (block_g_3)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_1/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_1/Gij (block_g_3)                 0.00       0.59 f
+  Usparce_tree/Cout[7] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[7] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_8/Ci (cs_generic_N4_1)            0.00       0.59 f
+  USum_generator/cs_gen_8/U1/SEL (MUX21_GENERIC_N4_1)     0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/A (IV_1)                 0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_8/U1/UIV/Y (IV_1)                 0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_1/B (ND2_5)             0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_1/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_8/U1/UND2_1/Y (ND2_5)             0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_1/B (ND2_4)             0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_1/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_8/U1/UND3_1/Y (ND2_4)             0.00       0.69 r
+  USum_generator/cs_gen_8/U1/Y[1] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_8/S[1] (cs_generic_N4_1)          0.00       0.69 r
+  USum_generator/S[29] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[29] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[30] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/Gk1j (block_g_3)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_1/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_1/Gij (block_g_3)                 0.00       0.59 f
+  Usparce_tree/Cout[7] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[7] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_8/Ci (cs_generic_N4_1)            0.00       0.59 f
+  USum_generator/cs_gen_8/U1/SEL (MUX21_GENERIC_N4_1)     0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/A (IV_1)                 0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_8/U1/UIV/Y (IV_1)                 0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_2/B (ND2_8)             0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_2/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_8/U1/UND2_2/Y (ND2_8)             0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_2/B (ND2_7)             0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_2/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_8/U1/UND3_2/Y (ND2_7)             0.00       0.69 r
+  USum_generator/cs_gen_8/U1/Y[2] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_8/S[2] (cs_generic_N4_1)          0.00       0.69 r
+  USum_generator/S[30] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[30] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+  Startpoint: A[0] (input port)
+  Endpoint: S[31] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  P4adder            5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                    0.00       0.00 f
+  A[0] (in)                                               0.00       0.00 f
+  Usparce_tree/A[1] (sparce_tree_POWER5)                  0.00       0.00 f
+  Usparce_tree/U1/Z (XOR2_X1)                             0.08       0.08 f
+  Usparce_tree/blkg_Cin_0/Pik (block_g_0)                 0.00       0.08 f
+  Usparce_tree/blkg_Cin_0/U2/ZN (AOI21_X1)                0.04       0.12 r
+  Usparce_tree/blkg_Cin_0/U1/ZN (INV_X1)                  0.02       0.14 f
+  Usparce_tree/blkg_Cin_0/Gij (block_g_0)                 0.00       0.14 f
+  Usparce_tree/blkg_1_1/Gk1j (block_g_9)                  0.00       0.14 f
+  Usparce_tree/blkg_1_1/U2/ZN (AOI21_X1)                  0.04       0.18 r
+  Usparce_tree/blkg_1_1/U1/ZN (INV_X1)                    0.02       0.21 f
+  Usparce_tree/blkg_1_1/Gij (block_g_9)                   0.00       0.21 f
+  Usparce_tree/blkg_2_1/Gk1j (block_g_8)                  0.00       0.21 f
+  Usparce_tree/blkg_2_1/U2/ZN (AOI21_X1)                  0.04       0.25 r
+  Usparce_tree/blkg_2_1/U1/ZN (INV_X1)                    0.04       0.29 f
+  Usparce_tree/blkg_2_1/Gij (block_g_8)                   0.00       0.29 f
+  Usparce_tree/blkg_3_1/Gk1j (block_g_7)                  0.00       0.29 f
+  Usparce_tree/blkg_3_1/U2/ZN (AOI21_X1)                  0.05       0.34 r
+  Usparce_tree/blkg_3_1/U1/ZN (INV_X1)                    0.04       0.39 f
+  Usparce_tree/blkg_3_1/Gij (block_g_7)                   0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/Gk1j (block_g_6)                0.00       0.39 f
+  Usparce_tree/blkg_4_1_0/U2/ZN (AOI21_X1)                0.06       0.44 r
+  Usparce_tree/blkg_4_1_0/U1/ZN (INV_X1)                  0.05       0.49 f
+  Usparce_tree/blkg_4_1_0/Gij (block_g_6)                 0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/Gk1j (block_g_3)                0.00       0.49 f
+  Usparce_tree/blkg_5_1_1/U2/ZN (AOI21_X1)                0.06       0.55 r
+  Usparce_tree/blkg_5_1_1/U1/ZN (INV_X1)                  0.04       0.59 f
+  Usparce_tree/blkg_5_1_1/Gij (block_g_3)                 0.00       0.59 f
+  Usparce_tree/Cout[7] (sparce_tree_POWER5)               0.00       0.59 f
+  USum_generator/Ci[7] (Sum_generator_Nbit32_Nblock8)     0.00       0.59 f
+  USum_generator/cs_gen_8/Ci (cs_generic_N4_1)            0.00       0.59 f
+  USum_generator/cs_gen_8/U1/SEL (MUX21_GENERIC_N4_1)     0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/A (IV_1)                 0.00       0.59 f
+  USum_generator/cs_gen_8/U1/UIV/U1/ZN (INV_X1)           0.05       0.64 r
+  USum_generator/cs_gen_8/U1/UIV/Y (IV_1)                 0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_3/B (ND2_11)            0.00       0.64 r
+  USum_generator/cs_gen_8/U1/UND2_3/U1/ZN (NAND2_X1)      0.03       0.67 f
+  USum_generator/cs_gen_8/U1/UND2_3/Y (ND2_11)            0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_3/B (ND2_10)            0.00       0.67 f
+  USum_generator/cs_gen_8/U1/UND3_3/U1/ZN (NAND2_X1)      0.02       0.69 r
+  USum_generator/cs_gen_8/U1/UND3_3/Y (ND2_10)            0.00       0.69 r
+  USum_generator/cs_gen_8/U1/Y[3] (MUX21_GENERIC_N4_1)
+                                                          0.00       0.69 r
+  USum_generator/cs_gen_8/S[3] (cs_generic_N4_1)          0.00       0.69 r
+  USum_generator/S[31] (Sum_generator_Nbit32_Nblock8)     0.00       0.69 r
+  S[31] (out)                                             0.00       0.70 r
+  data arrival time                                                  0.70
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+

@@ -1,0 +1,68 @@
+# analyzing and checking vhdl netlist #
+analyze -library WORK -format vhdl {nd2.vhd}
+analyze -library WORK -format vhdl {iv.vhd}
+analyze -library WORK -format vhdl {fa.vhd}
+analyze -library WORK -format vhdl {mux21_generic.vhd}
+analyze -library WORK -format vhdl {rca_generic.vhd}
+analyze -library WORK -format vhdl {cs_generic.vhd}
+analyze -library WORK -format vhdl {sum_generator_generic.vhd}
+analyze -library WORK -format vhdl {sparse_tree_carry_gen.vhd}
+analyze -library WORK -format vhdl {block_pg.vhd}
+analyze -library WORK -format vhdl {block_g.vhd}
+analyze -library WORK -format vhdl {booth_mux_generic.vhd}
+analyze -library WORK -format vhdl {P4adder.vhd}
+analyze -library WORK -format vhdl {BOOTHMUL.vhd}
+
+# ------------------ #
+# ----- 8 bits ----- #
+# ------------------ #
+
+# elaborating the top entity #
+elaborate CFG_BOOTH_MULTIPLIER_STRUCT -library WORK -parameters "Nbit = 8"
+
+# first compilation, without constraints #
+compile -exact_map
+
+# saving files 8 bits #
+write -hierarchy -format vhdl -output mul_synth_8bits.vhdl
+
+# reporting timing and power after the first synthesis without constraints #
+report_timing > mul-8bits-timing-no-opt.txt
+report_area > mul-8bits-area-no-opt.txt
+
+# MAX_PATH = 2.07 ns #
+# REQUIRED_TIME = MAX_PATH - 20% (MAX_PATH) = 1.656 ns #
+set_max_delay 1.656 -from [all_inputs] -to [all_outputs]
+# optimize #
+compile -map_effort high
+
+# save report
+report_timing -nworst 10 > mul-8bits-timing-opt.txt
+report_area > mul-8bits-area-opt.txt
+
+# ------------------- #
+# ----- 32 bits ----- #
+# ------------------- #
+
+# elaborating the top entity #
+elaborate CFG_BOOTH_MULTIPLIER_STRUCT -library WORK -parameters "Nbit = 32"
+
+# first compilation, without constraints #
+compile -exact_map
+
+# saving files 32 bits #
+write -hierarchy -format vhdl -output mul_synth_32bits.vhdl
+
+# reporting timing and power after the first synthesis without constraints #
+report_timing > mul-32bits-timing-no-opt.txt
+report_area > mul-32bits-area-no-opt.txt
+
+# MAX_PATH = 10.25 ns #
+# REQUIRED_TIME = MAX_PATH - 20% (MAX_PATH) = 8.2 ns #
+set_max_delay 8.2 -from [all_inputs] -to [all_outputs]
+# optimize #
+compile -map_effort high
+
+# save report
+report_timing -nworst 10 > mul-32bits-timing-opt.txt
+report_area > mul-32bits-area-opt.txt

@@ -1,0 +1,24 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : area
+Design : ALU
+Version: Z-2007.03-SP1
+Date   : Thu Mar 17 14:07:56 2016
+****************************************
+
+Library(s) Used:
+
+    NangateOpenCellLibrary (File: /home/mariagrazia.graziano/do/libnangate/NangateOpenCellLibrary_typical_ecsm.db)
+
+Number of ports:              196
+Number of nets:               871
+Number of cells:              611
+Number of references:          22
+
+Combinational area:       6228.656015
+Noncombinational area:     170.240005
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:          6398.895996
+Total area:                 undefined

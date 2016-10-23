@@ -1,0 +1,68 @@
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+package CONV_PACK_latch_En_gen is
+
+-- define attributes
+attribute ENUM_ENCODING : STRING;
+
+end CONV_PACK_latch_En_gen;
+
+library IEEE;
+
+use IEEE.std_logic_1164.all;
+
+use work.CONV_PACK_latch_En_gen.all;
+
+entity latch_En_gen is
+
+   port( CK, RESET : in std_logic;  D : in std_logic_vector (7 downto 0);  Q : 
+         out std_logic_vector (7 downto 0));
+
+end latch_En_gen;
+
+architecture SYN_LATCH_RES_ASYN of latch_En_gen is
+
+   component NAND2_X1
+      port( A1, A2 : in std_logic;  ZN : out std_logic);
+   end component;
+   
+   component INV_X1
+      port( A : in std_logic;  ZN : out std_logic);
+   end component;
+   
+   component AND2_X1
+      port( A1, A2 : in std_logic;  ZN : out std_logic);
+   end component;
+   
+   component DLH_X1
+      port( G, D : in std_logic;  Q : out std_logic);
+   end component;
+   
+   signal N5, N7, N8, N9, N11, N13, N15, N17, N19, n4, n5_port : std_logic;
+
+begin
+   
+   Q_reg_7_inst : DLH_X1 port map( G => N8, D => N19, Q => Q(7));
+   Q_reg_6_inst : DLH_X1 port map( G => N8, D => N17, Q => Q(6));
+   Q_reg_5_inst : DLH_X1 port map( G => N8, D => N15, Q => Q(5));
+   Q_reg_4_inst : DLH_X1 port map( G => N8, D => N13, Q => Q(4));
+   Q_reg_3_inst : DLH_X1 port map( G => N8, D => N11, Q => Q(3));
+   Q_reg_2_inst : DLH_X1 port map( G => N8, D => N9, Q => Q(2));
+   Q_reg_1_inst : DLH_X1 port map( G => N8, D => N7, Q => Q(1));
+   Q_reg_0_inst : DLH_X1 port map( G => N8, D => N5, Q => Q(0));
+   U14 : AND2_X1 port map( A1 => D(2), A2 => n4, ZN => N9);
+   U15 : NAND2_X1 port map( A1 => RESET, A2 => n5_port, ZN => N8);
+   U16 : AND2_X1 port map( A1 => D(1), A2 => n4, ZN => N7);
+   U17 : AND2_X1 port map( A1 => D(0), A2 => n4, ZN => N5);
+   U18 : AND2_X1 port map( A1 => D(7), A2 => n4, ZN => N19);
+   U19 : AND2_X1 port map( A1 => D(6), A2 => n4, ZN => N17);
+   U20 : AND2_X1 port map( A1 => D(5), A2 => n4, ZN => N15);
+   U21 : AND2_X1 port map( A1 => D(4), A2 => n4, ZN => N13);
+   U22 : AND2_X1 port map( A1 => D(3), A2 => n4, ZN => N11);
+   U23 : INV_X1 port map( A => n5_port, ZN => n4);
+   U24 : NAND2_X1 port map( A1 => RESET, A2 => CK, ZN => n5_port);
+
+end SYN_LATCH_RES_ASYN;
